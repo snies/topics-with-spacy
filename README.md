@@ -16,9 +16,10 @@ source bin/activate
 More info: https://docs.python.org/3/tutorial/venv.html
 
 Download default trained pipeline packages for English () and/or German (570MB)
+```shell
 python -m spacy download en_core_web_sm
 python -m spacy download de_core_news_lg
-
+```
 More info: https://spacy.io/usage/models
 
 ## Run the examples
