@@ -59,11 +59,11 @@ python topics_from_english_news.py
 expected result:
 
 ```shell
-{'topic_idx': 0, 'top_terms': ('that', 'is', 'are', 'mobil', 'it', 'be', 'people', 'for', 'said', 'they')}
-{'topic_idx': 1, 'top_terms': ('i', 'he', 'his', 's', 'we', 'it', 'but', 'for', 'is', 'have')}
-{'topic_idx': 2, 'top_terms': ('mr', 'labour', 'he', 'blair', 'election', 'brown', 'party', 'said', 'tax', 'his')}
-{'topic_idx': 3, 'top_terms': ('$', 's', 'm', 'its', 'us', 'growth', '£', 'said', 'economy', 'sales')}
-{'topic_idx': 4, 'top_terms': ('film', 'best', 'awards', 'award', 'for', 'actor', 'actress', 'won', 'director', 's')}
+{'topic_idx': 0, 'top_terms': ('game', 's', 'win', 'play', 'england', '6', 'player', 'say', 't', 'match')}
+{'topic_idx': 1, 'top_terms': ('mr', 'labour', 'election', 'blair', 'party', 'brown', 'say', 'minister', 'government', 'howard')}
+{'topic_idx': 2, 'top_terms': ('$', 's', 'say', 'growth', 'be', 'year', 'us', 'sale', 'economy', 'rise')}
+{'topic_idx': 3, 'top_terms': ('film', 'award', 'well', 'star', 'actor', 's', 'actress', 'win', 'director', 'oscar')}
+{'topic_idx': 4, 'top_terms': ('mobile', 'phone', 'people', 'technology', 'music', 'service', 'say', 'user', 'digital', 'gadget')
 ```
 
 ### english reviews from kaggle (amazon dataset)
@@ -84,18 +84,16 @@ expected result:
 reading data file
 initalizing topic modeler - this might take a while
 extracting topics
-/home/snies/repos/topics-with-spacy/lib/python3.8/site-packages/sklearn/decomposition/_nmf.py:1076: ConvergenceWarning: Maximum number of iterations 200 reached. Increase it to improve convergence.
-  warnings.warn("Maximum number of iterations %d reached. Increase it to"
-{'topic_idx': 0, 'top_terms': ('the', 'of', 'is', 'and', 'screen', 'The', 'Kindle', 'better', 'one', 'Echo')}
-{'topic_idx': 1, 'top_terms': ('loves', 'it', 'for', 'she', 'my', 'old', 'this', 'he', 'and', 'year')}
-{'topic_idx': 2, 'top_terms': ('tablet', 'for', 'price', 'kids', 'good', 'games', 'apps', 'perfect', 'this', 'This')}
-{'topic_idx': 3, 'top_terms': ('use', 'to', 'easy', 'Easy', 'set', 'up', 'and', 'Very', 'Easy to use', 'read')}
-{'topic_idx': 4, 'top_terms': ('I', 'my', 'it', 'this', 'bought', 'would', 'have', 'one', 'that', 'to')}
-{'topic_idx': 5, 'top_terms': ('Great', 'product', 'recommend', 'Great product', 'price', 'would', 'family', 'friends', 'gift', 'and')}
-{'topic_idx': 6, 'top_terms': ('great', 'is', 'This', 'It', 'works', 'The', 'and', 'Works', 'product', 'it')}
-{'topic_idx': 7, 'top_terms': ('to', 'you', 'can', 'it', 'Alexa', 'with', 'on', 'have', 'music', 'that')}
-{'topic_idx': 8, 'top_terms': ('love', 'they', 'kids', 'them', 'it', 'They', 'and', 'We', 'My', 'these')}
-{'topic_idx': 9, 'top_terms': ('very', 'good', 'happy', 'with', 'is', 'and', 'purchase', 'quality', 'The', 'Very')}
+{'topic_idx': 0, 'top_terms': ('Alexa', 'Echo', 'music', 'echo', 'device', 'Love', 'like', 'light', 'Amazon', 'home')}
+{'topic_idx': 1, 'top_terms': ('love', 'buy', 'gift', 'daughter', 'Christmas', 'absolutely', 'Bought', 'son', 'grandson', 'wife')}
+{'topic_idx': 2, 'top_terms': ('tablet', 'app', 'price', 'need', 'child', 'game', 'little', 'perfect', 'Great', 'Amazon')}
+{'topic_idx': 3, 'top_terms': ('use', 'easy', 'Easy', 'set', 'setup', 'fun', 'son', 'light', 'navigate', 'convenient')}
+{'topic_idx': 4, 'top_terms': ('read', 'book', 'Kindle', 'kindle', 'game', 'size', 'like', 'light', 'Fire', 'well')}
+{'topic_idx': 5, 'top_terms': ('product', 'Great', 'recommend', 'price', 'friend', 'highly', 'buy', 'family', 'service', 'Best')}
+{'topic_idx': 6, 'top_terms': ('great', 'work', 'Works', 'price', 'sound', 'little', 'battery', 'life', 'need', 'gift')}
+{'topic_idx': 7, 'top_terms': ('kid', 'app', 'game', 'lot', 'play', 'amazon', 'friendly', 'learn', 'free', 'entertain')}
+{'topic_idx': 8, 'top_terms': ('old', 'year', '2', '3', '4', 'Bought', '2 year old', 'son', '8', 'grandson')}
+{'topic_idx': 9, 'top_terms': ('good', 'price', 'quality', 'sound', 'pretty', 'picture', 'work', 'nice', 'Good', 'look')}
 ```
 
 
