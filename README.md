@@ -1,5 +1,7 @@
 # topics-with-spacy
 
+Some examples on how to extract topics from a collection of texts using spacy and textacy.
+
 ## Uses spaCy and Textacy 
 https://spacy.io/
 
@@ -41,7 +43,7 @@ More info: https://spacy.io/usage/models
 
 ## Run the examples
 
-# english news from kaggle (BBC)
+### english news from kaggle (BBC)
 
 this assumes you have a file called `BBC-News-Train.csv` from this kaggle dataset: 
 
@@ -64,7 +66,7 @@ expected result:
 {'topic_idx': 4, 'top_terms': ('film', 'best', 'awards', 'award', 'for', 'actor', 'actress', 'won', 'director', 's')}
 ```
 
-# english reviews from kaggle (amazon dataset)
+### english reviews from kaggle (amazon dataset)
 
 this assumes you have a file called `Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv` from this kaggle dataset: 
 
@@ -97,7 +99,7 @@ extracting topics
 ```
 
 
-# german reviews from an app store
+### german reviews from an app store
 This assumes you have a file `german_review_data.json` structured like this:  
 ```shell
 [ 
