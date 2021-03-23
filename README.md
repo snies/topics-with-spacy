@@ -50,7 +50,7 @@ this assumes you have a file called `BBC-News-Train.csv` from this kaggle datase
 https://www.kaggle.com/c/learn-ai-bbc
 
 
-run the english new example 
+run the english news example 
 ```shell
 python topics_from_english_news.py
 
