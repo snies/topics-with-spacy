@@ -41,37 +41,6 @@ More info: https://spacy.io/usage/models
 
 ## Run the examples
 
-# german reviews from an app store
-This assumes you have a file `german_review_data.json` structured like this:  
-```shell
-[ 
-    {"id": "123", "type": "foo", "attributes": {"date": "2020-12-05T05:40:12Z", "review": "Ein langer Review auf deutsch.", "userName": "User123", "rating": 4}},
-    {"id": ...}
-    ...    
-]
-```
-
-run the german reviews example:
-```shell
-python topics_from_english_reviews.py
-```
-
-expected result:
-```shell
-reading data file
-initalizing topic modeler - this might take a while
-extracting topics
-{'topic_idx': 0, 'top_terms': ('App', 'Auto', 'Brand', 'neu', 'laufen', 'Problem', 'Datum', 'nutzen', 'einfach', 'Woche')}
-{'topic_idx': 1, 'top_terms': ('Update', 'stürzen', 'iOS', '13', 'App', 'letzt', 'iOS 13', 'iPhone', 'Version', 'starten')}
-{'topic_idx': 2, 'top_terms': ('Fahrzeug', 'Verbindung', 'Datum', 'Meldung', 'anzeigen', 'obwohl', 'falsch', 'Kommunikation', 'senden', 'aufbauen')}
-{'topic_idx': 3, 'top_terms': ('Funktion', 'nützliche', 'nutzen', 'frei', 'spannen', 'instabil', 'Passat', 'tollen', 'Ziel', 'senden')}
-{'topic_idx': 4, 'top_terms': ('funktionieren', 'zuverlässig', 'App', 'Woche', 'Stern', 'perfekt', 'Monat', 'bekommen', 'Connect', 'rein')}
-{'topic_idx': 5, 'top_terms': ('Funktioniert', 'Verbindung', 'irgendwie', 'wunderbar', 'Versuch', 'komplizieren', 'Passat', 'zuverlässig', 'GTE', 'WLAN')}
-{'topic_idx': 6, 'top_terms': ('Login', 'stürzen', 'nutzbar', 'scheitern', 'Woche', 'unbrauchbar', 'Sitzung', 'Fehler', 'Update', 'ablaufen')}
-{'topic_idx': 7, 'top_terms': ('Standheizung', 'starten', 'lässt', 'Versuch', 'ausreifen', 'aktivieren', '2.', 'einschalten', '10', 'dauern')}
-{'topic_idx': 8, 'top_terms': ('Stürzt', 'Start', 'sofort', 'letzt', 'iPhone', 'genau', 'benutzen', 'Katastrophe', 'starten', 'einloggen')}
-{'topic_idx': 9, 'top_terms': ('mal', 'Mal', 'Verbindungsprobleme', 'Schaut', 's', 'laufen', 'tun', 'jed', 'Auto', 'Tesla')}
-```
 
 
 # english reviews from kaggle (amazon dataset)
@@ -104,4 +73,37 @@ extracting topics
 {'topic_idx': 7, 'top_terms': ('to', 'you', 'can', 'it', 'Alexa', 'with', 'on', 'have', 'music', 'that')}
 {'topic_idx': 8, 'top_terms': ('love', 'they', 'kids', 'them', 'it', 'They', 'and', 'We', 'My', 'these')}
 {'topic_idx': 9, 'top_terms': ('very', 'good', 'happy', 'with', 'is', 'and', 'purchase', 'quality', 'The', 'Very')}
+```
+
+
+# german reviews from an app store
+This assumes you have a file `german_review_data.json` structured like this:  
+```shell
+[ 
+    {"id": "123", "type": "foo", "attributes": {"date": "2020-12-05T05:40:12Z", "review": "Ein langer Review auf deutsch.", "userName": "User123", "rating": 4}},
+    {"id": ...}
+    ...    
+]
+```
+
+run the german reviews example:
+```shell
+python topics_from_english_reviews.py
+```
+
+expected result:
+```shell
+reading data file
+initalizing topic modeler - this might take a while
+extracting topics
+{'topic_idx': 0, 'top_terms': ('App', 'Auto', 'Brand', 'neu', 'laufen', 'Problem', 'Datum', 'nutzen', 'einfach', 'Woche')}
+{'topic_idx': 1, 'top_terms': ('Update', 'stürzen', 'iOS', '13', 'App', 'letzt', 'iOS 13', 'iPhone', 'Version', 'starten')}
+{'topic_idx': 2, 'top_terms': ('Fahrzeug', 'Verbindung', 'Datum', 'Meldung', 'anzeigen', 'obwohl', 'falsch', 'Kommunikation', 'senden', 'aufbauen')}
+{'topic_idx': 3, 'top_terms': ('Funktion', 'nützliche', 'nutzen', 'frei', 'spannen', 'instabil', 'Passat', 'tollen', 'Ziel', 'senden')}
+{'topic_idx': 4, 'top_terms': ('funktionieren', 'zuverlässig', 'App', 'Woche', 'Stern', 'perfekt', 'Monat', 'bekommen', 'Connect', 'rein')}
+{'topic_idx': 5, 'top_terms': ('Funktioniert', 'Verbindung', 'irgendwie', 'wunderbar', 'Versuch', 'komplizieren', 'Passat', 'zuverlässig', 'GTE', 'WLAN')}
+{'topic_idx': 6, 'top_terms': ('Login', 'stürzen', 'nutzbar', 'scheitern', 'Woche', 'unbrauchbar', 'Sitzung', 'Fehler', 'Update', 'ablaufen')}
+{'topic_idx': 7, 'top_terms': ('Standheizung', 'starten', 'lässt', 'Versuch', 'ausreifen', 'aktivieren', '2.', 'einschalten', '10', 'dauern')}
+{'topic_idx': 8, 'top_terms': ('Stürzt', 'Start', 'sofort', 'letzt', 'iPhone', 'genau', 'benutzen', 'Katastrophe', 'starten', 'einloggen')}
+{'topic_idx': 9, 'top_terms': ('mal', 'Mal', 'Verbindungsprobleme', 'Schaut', 's', 'laufen', 'tun', 'jed', 'Auto', 'Tesla')}
 ```
