@@ -6,7 +6,7 @@ class TopicModeler:
     def __init__(self, spacy_language: str, data: []):
 
         self.corpus = textacy.Corpus(
-                textacy.load_spacy_lang("de_core_news_lg", 
+                textacy.load_spacy_lang(spacy_language, 
                 disable=("parser", "tagger")), data=data
             )
         self.vectorizer = textacy.vsm.Vectorizer(
