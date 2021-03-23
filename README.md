@@ -41,5 +41,11 @@ More info: https://spacy.io/usage/models
 
 ## Run the examples
 
-This assumes you have a file  
-[{"id": "123", "type": "foo", "attributes": {"date": "2020-12-05T05:40:12Z", "review": "Ein langer Review auf deutsch.", "userName": "User123", "rating": 4}}]
+This assumes you have a file `german_review_data.json' structured like this:  
+```shell
+[ 
+    {"id": "123", "type": "foo", "attributes": {"date": "2020-12-05T05:40:12Z", "review": "Ein langer Review auf deutsch.", "userName": "User123", "rating": 4}},
+    {"id": ...}
+    ...    
+]
+```
