@@ -32,7 +32,7 @@ user pip to install all the dependencies
 pip3 install -r requirements.txt
 ```
 
-Download default trained pipeline packages for English () and/or German (570MB)
+Download default trained pipeline packages for English (12MB) and/or German (570MB)
 ```shell
 python -m spacy download en_core_web_sm
 python -m spacy download de_core_news_lg
@@ -41,11 +41,32 @@ More info: https://spacy.io/usage/models
 
 ## Run the examples
 
+# english news from kaggle (BBC)
 
+this assumes you have a file called `BBC-News-Train.csv` from this kaggle dataset: 
+
+https://www.kaggle.com/c/learn-ai-bbc
+
+
+run the english new example 
+```shell
+python topics_from_english_news.py
+
+```
+
+expected result:
+
+```shell
+{'topic_idx': 0, 'top_terms': ('that', 'is', 'are', 'mobil', 'it', 'be', 'people', 'for', 'said', 'they')}
+{'topic_idx': 1, 'top_terms': ('i', 'he', 'his', 's', 'we', 'it', 'but', 'for', 'is', 'have')}
+{'topic_idx': 2, 'top_terms': ('mr', 'labour', 'he', 'blair', 'election', 'brown', 'party', 'said', 'tax', 'his')}
+{'topic_idx': 3, 'top_terms': ('$', 's', 'm', 'its', 'us', 'growth', '£', 'said', 'economy', 'sales')}
+{'topic_idx': 4, 'top_terms': ('film', 'best', 'awards', 'award', 'for', 'actor', 'actress', 'won', 'director', 's')}
+```
 
 # english reviews from kaggle (amazon dataset)
 
-download the dataset from kaggle 
+this assumes you have a file called `Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv` from this kaggle dataset: 
 
 https://www.kaggle.com/datafiniti/consumer-reviews-of-amazon-products
 
@@ -88,7 +109,7 @@ This assumes you have a file `german_review_data.json` structured like this:
 
 run the german reviews example:
 ```shell
-python topics_from_english_reviews.py
+python topics_from_german_reviews.py
 ```
 
 expected result:

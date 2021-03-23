@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# venv folders and files
+bin/
+lib64
+pyvenv.cfg
+
 # Distribution / packaging
 .Python
 build/
@@ -127,3 +132,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+BBC-News-Train.csv
+Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv
+german_review_data.json
